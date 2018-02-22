@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bus Mall Project</title>
+        <title>Shop</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
@@ -12,26 +12,224 @@
     </head>
 
     <body>
-        <header>Metro Bus Mall Project</header>
+        <header>Shop Here</header>
+
         <main>
 
-            <h1 id="introPara">Welcome!</h1>
+            <h1 id="introPara">Welcome! Buy our stuff</h1>
+           
+                <div class="dropdown">
+                    <form>
+                        <img src="img/bag.jpg">
+                        <button  class="dropbtn">R2D2</button>
+                        <div class="dropdown-content">
+                            Add to cart <input id="bagPic" type="number">
+                        </div>
+                    </form>
+                 </div>
 
-            <p id="introBlurb">Congratulations, you have been selected to participate in our experiment. You will be shown three pictures, simply click on the picture you like the most. Do it 25 times and win a prize!</p>
+                 <div class="dropdown">
+                    <form>
+                        <img src="img/banana.jpg">
+                        <button class="dropbtn">Banana Slicer</button>
+                        <div class="dropdown-content">
+                             Add to cart<input id="bananaPic" type="number">
+                        </div>
+                    </form>
+                </div>
 
-            <section>
-                <ul id="picSection"></ul>
-                <ol id="reportSection"></ol>
-             </section>
+                <div class="dropdown">
+                    <form>
+                        <img src="img/bathroom.jpg">
+                        <button class="dropbtn">WC Reader</button>
+                        <div class="dropdown-content">
+                            Add to cart<input id="bathroomPic" type="number"></a>
+                        </div>
+                    </form>
+                    </div>
 
-            <section id="canvasSection">
-                <canvas id="myChart"></canvas>
-            </section>
+             <div class="dropdown">
+                    <form>
+                        <img src="img/boots.jpg">
+                        <button class="dropbtn">Boots?</button>
+                        <div class="dropdown-content">
+                           Add to cart <input id="bootsPic" type="number">
+                        </div>
+                    </form>
+                 </div>
 
+                 <button id="checkOut">Checkout</button>
+                 <button id="resetButton">Reset</button>
+                 <!-- <div class="dropdown">
+                    <form>
+                        <img src="img/breakfast.jpg">
+                        <button id="breakfastPic" class="dropbtn">Shop</button>
+                        <div class="dropdown-content">
+                            <a href="#">Add to cart <input type="number"></a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="dropdown">
+                    <form>
+                        <img src="img/bubblegum.jpg">
+                        <button id="bubblePic" class="dropbtn">Shop</button>
+                        <div class="dropdown-content">
+                            <a href="#">Add to cart <input type="number"></a>
+                        </div>
+                    </form>
+                    </div>
+
+                    <div class="dropdown">
+                            <form>
+                                <img src="img/chair.jpg">
+                                <button id="chairPic" class="dropbtn">Chair...</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Add to cart <input type="number"></a>
+                                </div>
+                            </form>
+                         </div>
+        
+                         <div class="dropdown">
+                            <form>
+                                <img src="img/cthulhu.jpg">
+                                <button id="cthulhuPic" class="dropbtn">Shop</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Add to cart <input type="number"></a>
+                                </div>
+                            </form>
+                        </div>
+        
+                        <div class="dropdown">
+                            <form>
+                                <img src="img/dog-duck.jpg">
+                                <button id="dogDuckPic" class="dropbtn">Shop</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Add to cart <input type="number"></a>
+                                </div>
+                            </form>
+                            </div>
+        
+                     <div class="dropdown">
+                            <form>
+                                <img src="img/dragon.jpg">
+                                <button id="dragonPic" class="dropbtn">Shop</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Add to cart <input type="number"></a>
+                                </div>
+                            </form>
+                         </div>
+        
+                         <div class="dropdown">
+                            <form>
+                                <img src="img/pen.jpg">
+                                <button id="penPic" class="dropbtn">Shop</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Add to cart <input type="number"></a>
+                                </div>
+                            </form>
+                        </div>
+        
+                        <div class="dropdown">
+                            <form>
+                                <img src="img/pet-sweep.jpg">
+                                <button id="petSweepPic" class="dropbtn">Shop</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Add to cart <input type="number"></a>
+                                </div>
+                            </form>
+                            </div>
+                            <div class="dropdown">
+                                    <form>
+                                        <img src="img/scissors.jpg">
+                                        <button id="scissorsPic" class="dropbtn">Shop</button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Add to cart <input type="number"></a>
+                                        </div>
+                                    </form>
+                                 </div>
+                
+                                 <div class="dropdown">
+                                    <form>
+                                        <img src="img/shark.jpg">
+                                        <button id="sharkPic" class="dropbtn">Shop</button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Add to cart <input type="number"></a>
+                                        </div>
+                                    </form>
+                                </div>
+                
+                                <div class="dropdown">
+                                    <form>
+                                        <img src="img/sweep.png">
+                                        <button id="sweepPic" class="dropbtn">Shop</button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Add to cart <input type="number"></a>
+                                        </div>
+                                    </form>
+                                    </div>
+                
+                             <div class="dropdown">
+                                    <form>
+                                        <img src="img/tauntaun.jpg">
+                                        <button id="tauntaunPic" class="dropbtn">Shop</button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Add to cart <input type="number"></a>
+                                        </div>
+                                    </form>
+                                 </div>
+                
+                                 <div class="dropdown">
+                                    <form>
+                                        <img src="img/unicorn.jpg">
+                                        <button id="unicornPic" class="dropbtn">Shop</button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Add to cart <input type="number"></a>
+                                        </div>
+                                    </form>
+                                </div>
+                
+                                <div class="dropdown">
+                                    <form>
+                                        <img src="img/usb.gif">
+                                        <button id="usbPic" class="dropbtn">Shop</button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Add to cart <input type="number"></a>
+                                        </div>
+                                    </form>
+                                    </div>
+                
+                                    <div class="dropdown">
+                                            <form>
+                                                <img src="img/water-can.jpg">
+                                                <button id="waterCanPic" class="dropbtn">Shop</button>
+                                                <div class="dropdown-content">
+                                                    <a href="#">Add to cart <input type="number"></a>
+                                                </div>
+                                            </form>
+                                         </div>
+                        
+                                         <div class="dropdown">
+                                            <form>
+                                                <img src="img/wine-glass.jpg">
+                                                <button id="winePic" class="dropbtn">Shop</button>
+                                                <div class="dropdown-content">
+                                                    <a href="#">Add to cart <input type="number"></a>
+                                                </div>
+                                            </form>
+                                        </div>
+                        
+
+                                        <div id="sellStuff">
+                                            <ul id="picSection">
+
+                                            </ul>
+                                        </div> -->
+                                        
         </main>
         <footer></footer>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+        
         <script src="js/app.js"></script>
     </body>
 </html>
