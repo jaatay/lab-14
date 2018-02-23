@@ -79,7 +79,6 @@ var getThis = () =>{
     var newBanana = localStorage.getItem('banana');
     var newBoots = localStorage.getItem('boots');
     var newBathroom = localStorage.getItem('bathroom');
-        
 
     if(newBag || newBanana || newBoots || newBathroom){
             
@@ -87,9 +86,7 @@ var getThis = () =>{
             newBanana = JSON.parse(newBanana);
             newBoots = JSON.parse(newBoots);
             newBathroom = JSON.parse(newBathroom);
-            finalArray.push(thisnewBag);
-
-            totalPage();
+            finalArray.push(newBag, newBanana, newBoots, newBathroom);
     } 
 };
 
@@ -115,6 +112,7 @@ var switchPage = function(){
     storeThis();
     window.open('cart.html');
     getThis();
+    totalPage();
 };
 
 //Set state one
