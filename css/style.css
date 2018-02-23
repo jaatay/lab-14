@@ -49,3 +49,8 @@ img {
     height: 50px;
     width: 50px;
 }
+
+ul li p {
+    color: black;
+    font-size: 2em;
+}

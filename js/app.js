@@ -1,15 +1,20 @@
 'use strict'
 
-window.onload = function() {
 var picPaths = ['img/bag.jpg' , 'img/banana.jpg' , 'img/bathroom.jpg' , 'img/boots.jpg' ,'img/breakfast.jpg' , 'img/bubblegum.jpg' , 'img/chair.jpg' , 'img/cthulhu.jpg' , 'img/dog-duck.jpg' , 'img/dragon.jpg' , 'img/pen.jpg' , 'img/pet-sweep.jpg' , 'img/scissors.jpg' , 'img/shark.jpg','img/sweep.png' , 'img/tauntaun.jpg' , 'img/unicorn.jpg' , 'img/usb.gif' , 'img/water-can.jpg' , 'img/wine-glass.jpg'];
 var picNames = ['bagPic' , 'bananaPic' , 'bathroomPic' , 'bootsPic' , 'breakfastPic' , 'bubblePic' , 'chairPic' , 'demonPic' , 'dogPic' , 'dragonPic','penPic' , 'petPic' , 'scissorsPic' , 'sharkPic' , 'sweepPic' , 'taunPic' , 'unicornPic' , 'usbPic' , 'canPic' , 'winePic'];
 var allInfo = [];
 var finalArray = [];
+
 var bagProduct = document.getElementById('bagPic');
 var bananaProduct = document.getElementById('bananaPic');
 var bootsProduct = document.getElementById('bootsPic');
 var bathroomProduct = document.getElementById('bathroomPic');
 var saleReport = document.getElementById('reportSection');
+
+var bagReport = document.getElementById('bagReport');
+var bananaReport = document.getElementById('bananaReport');
+var bootsReport = document.getElementById('bootsReport');
+var bathroomReport = document.getElementById('bathroomReport');
 
 var checkOutButton = document.getElementById('checkThis');
 var submitThis = document.getElementsByClassName('submit');
@@ -82,34 +87,36 @@ var getThis = () =>{
             newBanana = JSON.parse(newBanana);
             newBoots = JSON.parse(newBoots);
             newBathroom = JSON.parse(newBathroom);
-            finalArray.push(newBag, newBanana, newBoots, newBathroom);
-    } 
+            finalArray.push(thisnewBag);
 
-    
+            totalPage();
+    } 
 };
 
 var totalPage = function(){
-    for (var i = 0; i < finalArray.length; i++){
-        var newLI = document.createElement('li');
-        newLI.textContent = finalArray[i].value;
-        reportSection.appendChild(newLI);
+    var newP = document.createElement('p');
+    newP.textContent = newBag;
+    bagReport.appendChild(newP);
 
-    }
-    
+    var newP2 = document.createElement('p');
+    newP2.textContent = newBanana;
+    bananaReport.appendChild(newP2);
+
+    var newP3 = document.createElement('p');
+    newP3.textContent = newBoots;
+    bootsReport.appendChild(newP3)
+
+    var newP4 = document.createElement('p');
+    newP4.textContent = newBathroom;
+    bathroomReport.appendChild(newP4);
 };
 
 var switchPage = function(){
     storeThis();
     window.open('cart.html');
     getThis();
-    totalPage();
 };
-
-
-
 
 //Set state one
-
 createStateOne();
 checkOutButton.addEventListener('click', switchPage);
-};
